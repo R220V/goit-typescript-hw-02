@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.button {
+  font-size: 18px;
+  width: 115px;
+  height: 45px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0;
+  border: 1px solid rgb(255, 251, 0);
+  color:rgb(255, 251, 0);
+  background-color: rgba(44, 74, 247, 0.897);
+  border-radius: 6px;
+  transition: color 200ms linear, 
+	background-color 400ms linear;
+}
+
+.button:hover,
+.button:focus {
+  border: 1px solid rgb(0, 38, 255);
+  color:rgb(0, 38, 255);
+  background-color: rgba(252, 255, 97, 0.486);
+  box-shadow: 1px 1px 10px 1px rgb(21, 0, 206);
+}
