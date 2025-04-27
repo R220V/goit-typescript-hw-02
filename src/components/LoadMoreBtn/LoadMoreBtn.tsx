@@ -1,6 +1,4 @@
 import css from './LoadMoreBtn.module.css';
-import Modal from 'react-modal';
-import { Photo } from '../App/App.types';
 
 interface LoadMoreBtnProps {
 	page: number;

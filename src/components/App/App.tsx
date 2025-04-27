@@ -12,13 +12,13 @@ import { Photo } from './App.types';
 
 export default function App (){
 
-const [image , setImage] = useState([])
+const [image , setImage] = useState<Photo[]>([])
 const [search, setSearch]= useState('')
 const [isLoad, setIsLoad]= useState(false)
 const [page, setPage]=useState(1)
 const [morePages, setMorePages]=useState(true)
 const [error, setError]=useState(false)
-const [selectImage, setSelectImage] =useState(null)
+const [selectImage, setSelectImage] =useState<Photo | null>(null)
 const[isModalOpen, setIsModalOpen]=useState(false)
 
 const handleSearch =(topic: string)=>{
@@ -44,7 +44,7 @@ try  {
   setImage(prevImages=>{
     return [...prevImages, ...data]
   })
-}  catch {
+}  catch (e) {
   setError(true)
   toast.error("Please reload your page",{
   position: 'top-right',
